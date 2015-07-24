@@ -16,6 +16,7 @@
 # \paragraph{Turn off AFP server on Macs}
 
 class afp::server::no::darwin {
+#t <#190> cybercompliance:implements mavericks:SV-72727r1_rule .
 # \implements{mlionstig}{OSX8-00-00140}%
 # Disable file sharing via AFP.
     service { 'com.apple.AppleFileServer':
