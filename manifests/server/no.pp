@@ -16,5 +16,6 @@
 # \subsubsection{Turn off AFP server}
 
 class afp::server::no {
-    include "afp::server::no::${::osfamily}"
+    $lower_osfamily = downcase($::osfamily)
+    include "afp::server::no::${lower_osfamily}"
 }
